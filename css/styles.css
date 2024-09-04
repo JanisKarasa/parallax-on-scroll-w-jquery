@@ -168,6 +168,11 @@ p:last-of-type {
   color: #00ff6c;
 }
 
+/* preventing parallax from global transitioning defined at the top so it doesn't jump up and down with latency */
+.parallax--bg {
+  transition: initial;
+}
+
 /* header
 =================== */
 
@@ -222,8 +227,6 @@ nav a:focus {
   background-position: center;
   padding: 10em 0;
   color: #fff;
-  /* making background image/picture locked in place and the rest of the content is scrolling over */
-  background-attachment: fixed;
 }
 
 @media (min-width: 60rem) {
