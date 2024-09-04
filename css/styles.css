@@ -222,6 +222,8 @@ nav a:focus {
   background-position: center;
   padding: 10em 0;
   color: #fff;
+  /* making background image/picture locked in place and the rest of the content is scrolling over */
+  background-attachment: fixed;
 }
 
 @media (min-width: 60rem) {
