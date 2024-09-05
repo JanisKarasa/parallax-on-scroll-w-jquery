@@ -169,7 +169,8 @@ p:last-of-type {
 }
 
 /* preventing parallax from global transitioning defined at the top so it doesn't jump up and down with latency */
-.parallax--bg {
+.parallax--bg,
+.parallax--box {
   transition: initial;
 }
 

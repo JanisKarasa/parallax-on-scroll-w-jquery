@@ -16,4 +16,11 @@ function parallax() {
   // ... like background-position changing its center up and down
   // 'center ' needs a space right after word "center" to define its value with (wScroll*0.75)+'px'
   // multiplying scroll by 0.75 the background image will move slower than your scrolling by 25%
+
+  // 3. selecting parallax box to modify its css properties ...
+  $(".parallax--box").css("top", -5 + wScroll * 0.005 + "em");
+  // ... like top changing its position up and down
+  // -5 is current top position of the box
+  // multiplying scroll by 0.005 the box will move slower than your scrolling
+  // we use 'em' here because it is set as a unit in css (top: -5em)
 }
